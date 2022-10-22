@@ -9,6 +9,10 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 /* ---------- */
 
 #main {
@@ -150,6 +154,63 @@ html {
 
 #content {
 
+}
+
+#content .content-section {
+    margin: 0 auto;
+    padding: 64px 0;
+    width: 800px;
+}
+
+#content .section-heading,
+#content .section-sub-heading {
+    text-align: center;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#content .section-sub-heading {
+    margin-top: 25px;
+
+    opacity: 0.6;
+
+    font-size: 15px;
+    font-style: italic;
+}
+
+#content .about-text {
+    margin-top: 25px;
+
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .members-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+
+    width: calc(100% / 3);
+
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
 }
 
 #footer {
