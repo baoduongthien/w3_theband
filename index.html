@@ -12,6 +12,7 @@
 <body>
     <div id="main">
 
+        <!-- Begin: header -->
         <header id="header">
             <!-- Begin: nav -->
             <ul id="nav">
@@ -40,15 +41,20 @@
             <!-- End: search button -->
 
         </header>
+        <!-- End: header -->
 
+        <!-- Begin: slider -->
         <div id="slider">
             <div class="text-content">
                 <h2 class="text-heading">Chicago</h2>
                 <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
             </div>
         </div>
+        <!-- End: slider -->
 
+        <!-- Begin: content -->
         <main id="content">
+            <!-- Begin: about section -->
             <section class="content-section">
                 <h2 class="section-heading">The band</h2>
                 <p class="section-sub-heading">We love music</p>
@@ -70,7 +76,9 @@
                     </div>
                 </div>
             </section>
+            <!-- End: about section -->
 
+            <!-- Begin: tour section -->
             <section class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">Tour dates</h2>
@@ -90,7 +98,7 @@
                                     <h3 class="place-heading">New York</h3>
                                     <p class="place-time">Fri 27 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                    <a href="#" class="btn">Buy Tickets</a>
                                 </div>
                             </div>
                             <div class="col col-third">
@@ -99,7 +107,7 @@
                                     <h3 class="place-heading">Paris</h3>
                                     <p class="place-time">Sat 28 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                    <a href="#" class="btn">Buy Tickets</a>
                                 </div>
                             </div>
                             <div class="col col-third">
@@ -108,14 +116,16 @@
                                     <h3 class="place-heading">San Francisco</h3>
                                     <p class="place-time">Sun 29 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                    <a href="#" class="btn">Buy Tickets</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- End: tour section -->
 
+            <!-- Begin: contact section -->
             <section class="content-section">
                 <h2 class="section-heading">Contact</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
@@ -144,18 +154,38 @@
                                         <input class="form-control mt-8" type="text" placeholder="Message" required>
                                     </div>
                                 </div>
-                                <input class="form-submit-btn mt-16" type="submit" value="SEND">
+                                <div class="row">
+                                    <div class="col col-full">
+                                        <input class="btn mt-16 f-right" type="submit" value="SEND">
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
                 
             </section>
+            <!-- End: contact section -->
+
+            <!-- Begin: map section -->
+            <section id="map">
+                <img src="./assets/img/map.jpeg" alt="Map">
+            </section>
+            <!-- End: map section -->
 
         </main>
+        <!-- End: content -->
 
         <footer id="footer">
-
+            <ul class="socials-list">
+                <li><a href=""><i class="ti-facebook"></i></a></li>
+                <li><a href=""><i class="ti-instagram"></i></a></li>
+                <li><a href=""><i class="ti-youtube"></i></a></li>
+                <li><a href=""><i class="ti-pinterest"></i></a></li>
+                <li><a href=""><i class="ti-twitter"></i></a></li>
+                <li><a href=""><i class="ti-linkedin"></i></a></li>
+            </ul>
+            <p class="copyright">Powered by <a href="#">w3.css</a></p>
         </footer>
 
     </div>

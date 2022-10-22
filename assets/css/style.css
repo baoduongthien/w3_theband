@@ -60,6 +60,29 @@ html {
     margin-top: 16px !important;
 }
 
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 16px;
+    border: none;
+
+    color: #fff;
+    background-color: #000;
+
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+
+    cursor: pointer;
+}
+
+.f-right {
+    float: right;
+}
+
 /* ---------- */
 
 #main {
@@ -209,7 +232,7 @@ html {
 
 #content .content-section {
     margin: 0 auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     width: 800px;
 }
 
@@ -344,23 +367,9 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 15px;
-    padding: 11px 16px;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
-
 /* ---- End: tour section ---- */
 
-/* ---- Begin: contact section */
+/* ---- Begin: contact section ---- */
 
 .contact-content {
     margin-top: 48px;
@@ -386,25 +395,44 @@ html {
     width: 100%;
 }
 
-.form-submit-btn {
-    float: right;
+/* ---- End: contact section ---- */
 
-    padding: 10px 16px;
-    border: none;
-
-    color: #fff;
-    background-color: #000;
-
-    cursor: pointer;
+/* ---- Begin: map section ---- */
+#map img {
+    width: 100%;
 }
-
-.form-submit-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
-
-/* ---- End: contact section */
+/* ---- End: map section ---- */
 
 #footer {
+    padding: 64px 16px;
 
+    text-align: center;
+}
+
+.socials-list {
+    font-size: 20px;
+    list-style: none;
+}
+
+.socials-list li {
+    display: inline-block;
+}
+
+.socials-list li a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.socials-list li a:hover {
+    opacity: 0.3;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
 }
