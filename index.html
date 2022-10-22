@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
-    <div id="main">
+    <div id="wrapper">
 
         <!-- Begin: header -->
         <header id="header">
             <!-- Begin: nav -->
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">
                         More
@@ -55,7 +55,7 @@
         <!-- Begin: content -->
         <main id="content">
             <!-- Begin: about section -->
-            <section class="content-section">
+            <section id="band" class="content-section">
                 <h2 class="section-heading">The band</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
@@ -79,7 +79,7 @@
             <!-- End: about section -->
 
             <!-- Begin: tour section -->
-            <section class="tour-section">
+            <section id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">Tour dates</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -98,7 +98,7 @@
                                     <h3 class="place-heading">New York</h3>
                                     <p class="place-time">Fri 27 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="btn">Buy Tickets</a>
+                                    <button class="btn js-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
                             <div class="col col-third">
@@ -107,7 +107,7 @@
                                     <h3 class="place-heading">Paris</h3>
                                     <p class="place-time">Sat 28 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="btn">Buy Tickets</a>
+                                    <button class="btn js-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
                             <div class="col col-third">
@@ -116,7 +116,7 @@
                                     <h3 class="place-heading">San Francisco</h3>
                                     <p class="place-time">Sun 29 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="btn">Buy Tickets</a>
+                                    <button class="btn js-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
             <!-- End: tour section -->
 
             <!-- Begin: contact section -->
-            <section class="content-section">
+            <section id="contact" class="content-section">
                 <h2 class="section-heading">Contact</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
@@ -176,6 +176,7 @@
         </main>
         <!-- End: content -->
 
+        <!-- Begin: footer -->
         <footer id="footer">
             <ul class="socials-list">
                 <li><a href=""><i class="ti-facebook"></i></a></li>
@@ -187,7 +188,41 @@
             </ul>
             <p class="copyright">Powered by <a href="#">w3.css</a></p>
         </footer>
-
+        <!-- End: footer -->
     </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                Tickets
+            </header>
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+                
+                <label for="email" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Send to
+                </label>
+                <input id="email" type="email" class="modal-input" placeholder="Enter email...">
+                
+                <button class="buy-tickets">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="#">Help?</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
