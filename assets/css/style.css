@@ -9,6 +9,8 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Common */
+
 .clear {
     clear: both;
 }
@@ -16,6 +18,30 @@ html {
 .text-white {
     color: #fff !important;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.col-half {
+    width: 50%;
+}
+
 
 /* ---------- */
 
@@ -203,14 +229,6 @@ html {
     margin-top: 48px;
 }
 
-#content .member-item {
-    float: left;
-
-    width: calc(100% / 3);
-
-    text-align: center;
-}
-
 #content .member-name {
     font-size: 15px;
 }
@@ -270,15 +288,8 @@ html {
 }
 
 .places-list {
-    margin: 32px -8px 0;
+    margin-top: 32px;
     padding-bottom: 32px;
-}
-
-.place-item {
-    float: left;
-
-    padding: 0 8px;
-    width: calc(100% / 3);
 }
 
 .place-img {
