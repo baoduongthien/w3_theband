@@ -22,6 +22,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 
     height: 46px;
 
@@ -117,8 +118,35 @@ html {
 /* ---- End: header ---- */
 
 #slider {
+    position: relative;
+
     margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/sliders/chicago.jpeg') top center / cover no-repeat;
 }
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+
+    width: 100%;
+    text-align: center;
+
+    color: #fff;
+
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+
+    font-size: 15px;
+}
+
 
 #content {
 
