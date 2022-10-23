@@ -12,6 +12,14 @@
         margin-top: 16px;
     }
 
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+
+    .s-full-width {
+        width: 100%;
+    }
+
     #nav {
         display: block;
     }
@@ -56,4 +64,7 @@
         width: 60%;
     }
 
+    .contact-form {
+        margin-top: 16px;
+    }
 }
