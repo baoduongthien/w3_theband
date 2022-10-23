@@ -401,6 +401,15 @@ html {
     line-height: 1.5;
 }
 
+.contact-info a {
+    color: #000;
+    text-decoration: underline;;
+}
+
+.contact-info a:hover {
+    opacity: 0.6;
+}
+
 .contact-info i[class*="ti-"] {
     display: inline-block;
 
@@ -420,9 +429,12 @@ html {
 /* ---- End: contact section ---- */
 
 /* ---- Begin: map section ---- */
+
 #map img {
     width: 100%;
+    filter: grayscale(0.5);
 }
+
 /* ---- End: map section ---- */
 
 /* Begin: footer */
@@ -442,6 +454,8 @@ html {
 }
 
 .socials-list li a {
+    padding: 12px;
+
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
 }

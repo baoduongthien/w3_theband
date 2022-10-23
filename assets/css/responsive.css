@@ -67,4 +67,8 @@
     .contact-form {
         margin-top: 16px;
     }
+
+    #footer .copyright a {
+        padding: 12px 0;
+    }
 }
