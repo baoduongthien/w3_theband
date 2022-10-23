@@ -1,5 +1,17 @@
 /* Mobile */
 @media (max-width: 740px) {
+    .s-col-full {
+        width: 100%;
+    }
+
+    .s-mt-32 {
+        margin-top: 32px;
+    }
+
+    .s-mt-16 {
+        margin-top: 16px;
+    }
+
     #nav {
         display: block;
     }
@@ -38,6 +50,10 @@
     
     #header .mobile-menu-btn {
         display: block;
+    }
+
+    #content .member-img {
+        width: 60%;
     }
 
 }
