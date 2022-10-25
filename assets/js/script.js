@@ -49,3 +49,24 @@ for (const menuItem of menuItems) {
 
     }
 }
+
+// Sliders
+
+const sliderElements = document.querySelectorAll('.sliders');
+let indexSlider;
+
+for (indexSlider = 1; indexSlider < sliderElements.length; indexSlider++) {
+    sliderElements[indexSlider].style.display = 'none';
+};
+
+indexSlider = 0;
+setInterval(() => {
+    sliderElements[indexSlider].style.display = 'none';
+    
+    indexSlider += 1;
+    if (indexSlider >= sliderElements.length) {
+        indexSlider = 0;
+    }
+
+    sliderElements[indexSlider].style.display = 'block';
+}, 3000);

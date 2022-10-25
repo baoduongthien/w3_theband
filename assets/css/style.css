@@ -212,15 +212,26 @@ html {
 
 /* ---- Begin: slider ---- */
 
-#slider {
+#slider1 {
+    background: url('/assets/img/sliders/chicago.jpeg') top center / cover no-repeat;
+}
+
+#slider2 {
+    background: url('/assets/img/sliders/ny.jpeg') top center / cover no-repeat;
+}
+
+#slider3 {
+    background: url('/assets/img/sliders/la.jpeg') top center / cover no-repeat;
+}
+
+.sliders {
     position: relative;
 
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/sliders/chicago.jpeg') top center / cover no-repeat;
 }
 
-#slider .text-content {
+.sliders .text-content {
     position: absolute;
     bottom: 48px;
 
@@ -231,12 +242,12 @@ html {
 
 }
 
-#slider .text-heading {
+.sliders .text-heading {
     font-size: 24px;
     font-weight: 500;
 }
 
-#slider .text-description {
+.sliders .text-description {
     margin-top: 25px;
 
     font-size: 15px;
